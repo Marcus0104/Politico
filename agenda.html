@@ -1,103 +1,258 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Agenda</title>
-</head>
-<body>
+@font-face {
+  font-family: 'SpongeBoy';
+  src: url('../fontes/SpongeBoy.woff2') format('woff2'),
+       url('../fontes/SpongeBoy.ttf') format('truetype');
 
-        <header>
-        <h1>BOB ESPONJA 01</h1>
-        <p>Com Bob Esponja, a alegria vem à tona!</p>
+  font-weight: 5px;
+  font-style: 5px;
+  
+}
+@font-face {
+  font-family: 'firacode';
+  src: url('../fontes/firacode.woff2') format('woff2'),
+       url('../fontes/firacode.ttf') format('truetype');
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="historia.html">História</a>
-            <a href="propostas.html">Propostas</a>
-            <a href="agenda.html">Agenda</a>
-            <a href="album.html">Álbum</a>
-            <a href="jingle.html">Jingle</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
+  font-weight: 3px;
+  font-style: 3px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  
+  background-color: #dff6ff;
+}
+h1,h2,h3,h4,h5,h6,a{
+  font-family: 'SpongeBoy', sans-serif !important;
+  letter-spacing: 3px;
+}
+p{
+  font-family: 'firacode', sans-serif !important;
+  color: #726800;
 
-    
+}
+header {
+  background-color: #f7e94a;
+  text-align: center;
+  padding: 20px;
+}
+header nav a{
+color: #004aad;
+}
+header h1 {
+  color: #004aad;
+}
 
-    <table>
+nav {
+  margin-top: 15px;
+}
 
-        <h2 class="data">Julho 2026</h2>
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  font-weight: bold;
+}
+.slogan section,
+.destaques section {
+  box-shadow: 2px 2px 2px 
+}
+.banner {
+  text-align: center;
+  margin: 20px;
+}
 
-        <thead>
-            <tr>
-                <th>Dom</th>
-                <th>Seg</th>
-                <th>Ter</th>
-                <th>Qua</th>
-                <th>Qui</th>
-                <th>Sex</th>
-                <th>Sáb</th>
-            </tr>
-        </thead>
+.banner img {
+  width: 400px;
+  height: 260px;
+  border-radius: 10px;
+}
+.slogan {
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.apresentacao {
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.Biografia{
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.apresentacao h2,
+.slogan h2,
+.Biografia h2 {
+  color: #004aad;
+  margin-bottom: 10px;
+}
+section{
+    box-shadow: 9px 9px 20px #004badbe;
+}
+section:hover {
+    transform: scale(1.04);
+    transition: all ease 0.8s;
+}
+.banner{
+  box-shadow: 0px 0px 0px ;
+}
+.banner img{
+  box-shadow: 9px 9px 20px #004badbe;
+}
+.audio{
+    width: 18%;
+    margin: 20px auto;
+    background-color: #004badaa;
+    padding: 20px;
+    border-radius: 10px;
+}
+.jingle{
+    width: 20%;
+    margin: 20px auto;
+    background-color: #f1f3f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 15px #f7e94a;
+}
 
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-            </tr>
+footer {
+  background-color: #f7e94a;
+  text-align: center;
+  padding: 15px; 
+  margin-top: 20px;
+}
 
-            <tr>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td class="evento">10</td>
-                <td>11</td>
-            </tr>
+/*Parte do thiaguinho */
 
-             <tr>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-                <td>17</td>
-                <td>18</td>
-            </tr>
+.album-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff8e7;
+    border: 5px solid #f7e94a; 
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    text-align: center;
+}
 
-             <tr>
-                <td>19</td>
-                <td>20</td>
-                <td>21</td>
-                <td>22</td>
-                <td>23</td>
-                <td>24</td>
-                <td>25</td>
-            </tr>
+.album-titulo {
+    color: #0056b3;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
 
-            <tr>
-                <td>26</td>
-                <td>27</td>
-                <td>28</td>
-                <td>29</td>
-                <td>30</td>
-                <td>31</td>
-                <td></td>
-            </tr>
+.painel-album {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
 
-        </tbody>
-    </table>
+.figurinha {
+    background: #fff;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
 
-    <footer>
-        <p>Campanha - Bob Esponja 01</p>
-    </footer>
-    
-</body>
-</html>
+.figurinha:hover {
+    transform: scale(1.05);
+    border-color: #004aad;
+}
+
+.numero-figurinha {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: #0056b3;
+    color: white;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.figurinha-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.figurinha-legenda {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+h2.data {
+  text-align: center;
+  padding: 40px;
+}
+
+table{
+  width: 100vh;
+  height: 75vh;
+  margin: 0 auto;
+}
+
+
+td{
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  box-shadow: 9px 9px 20px #004badbe;
+}
+
+.propostas{
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.propostas li{
+  list-style: none;
+  padding: 5px;
+}
+
+.evento{
+  background-color: rgb(216, 4, 4);
+}
+
+.descricao{
+  position: absolute;
+  visibility: hidden ;
+  width: 250px;
+  padding: 15px;
+  opacity: 0;
+  background-color: white;
+  box-shadow: 9px 9px 20px #0000009f;
+  border-radius: 10px;
+}
+
+.evento:hover .descricao{
+  visibility: visible;
+  opacity: 1;
+}
