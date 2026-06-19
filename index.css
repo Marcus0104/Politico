@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'SpongeBoy';
+  src: url('../fontes/Spongeboy.woff2') format('woff2'),
+       url('../fontes/Spongeboy.ttf') format('truetype');
+
+  font-weight: 5px;
+  font-style: 5px;
+  
+}
+@font-face {
+  font-family: 'firacode';
+  src: url('../fontes/firacode.woff2') format('woff2'),
+       url('../fontes/firacode.ttf') format('truetype');
+
+  font-weight: 3px;
+  font-style: 3px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  
+  background-color: #dff6ff;
+}
+h1,h2,h3,h4,h5,h6,a{
+  font-family: 'Spongeboy', sans-serif !important;
+  letter-spacing: 3px;
+  line-height: 15px;
+}
+p{
+  font-family: 'firacode', sans-serif !important;
+  color: #726800;
+
+}
+header {
+  background-color: #f7e94a;
+  text-align: center;
+  padding: 20px;
+}
+header nav a{
+color: #004aad;
+}
+header h1 {
+  color: #004aad;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  font-weight: bold;
+}
+.banner {
+  text-align: center;
+  margin: 20px;
+}
+
+.banner img {
+  width: 400px;
+  height: 260px;
+  border-radius: 10px;
+}
+.slogan {
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.apresentacao {
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.Biografia {
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.apresentacao h2,
+.slogan h2,
+.Biografia h2 {
+  color: #004aad;
+  margin-bottom: 10px;
+}
+section{
+    box-shadow: 9px 9px 20px #004badbe;
+}
+section:hover, .jingle:hover {
+    transform: scale(1.04);
+    transition: all ease 0.8s;
+}
+.banner{
+  box-shadow: 0px 0px 0px ;
+}
+.banner img{
+  box-shadow: 9px 9px 20px #004badbe;
+}
+.audio{
+    width: 18%;
+    margin: 20px auto;
+    background-color: #004badaa;
+    padding: 20px;
+    border-radius: 10px;
+}
+.jingle{
+    width: 20%;
+    margin: 20px auto;
+    background-color: #f1f3f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 15px #f7e94a;
+}
+
+footer {
+  background-color: #f7e94a;
+  text-align: center;
+  padding: 15px; 
+  margin-top: 20px;
+}
+
+/*Parte do thiaguinho */
+
+.album-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff8e7;
+    border: 5px solid #f7e94a; 
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.album-titulo {
+    color: #0056b3;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.painel-album {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+.figurinha {
+    background: #fff;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.figurinha:hover {
+    transform: scale(1.05);
+    border-color: #004aad;
+}
+
+.numero-figurinha {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: #0056b3;
+    color: white;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.figurinha-img {
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.figurinha-legenda {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.palavra {
+    color:#726800; 
+    transition: color 0.2s ease;
+    display: inline-block;
+}
+
+.palavra.cantada {
+    color: #f1c40f !important;
+    font-weight: bold;
+}
