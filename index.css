@@ -179,10 +179,13 @@ section:hover,
 }
 
 footer {
-  background-color: #f7e94a;
+  background-color: #b2793b;
   text-align: center;
   padding: 15px;
   margin-top: 20px;
+}
+footer p{
+  color: #f7e94a;
 }
 
 /*Parte do thiaguinho */
