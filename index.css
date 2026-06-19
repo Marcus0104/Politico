@@ -38,6 +38,7 @@ a {
 p {
   font-family: "firacode", sans-serif !important;
   color: #726800;
+  line-height: 20px;
 }
 header {
   background-color: #f7e94a;
