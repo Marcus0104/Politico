@@ -261,3 +261,56 @@ footer {
   color: #f1c40f !important;
   font-weight: bold;
 }
+
+/* Parte Nickollas */
+
+table{
+  width: 100vh;
+  height: 75vh;
+  margin: 0 auto;
+}
+
+
+td{
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  box-shadow: 9px 9px 20px #004badbe;
+}
+
+.propostas{
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.propostas li{
+  list-style: none;
+  padding: 5px;
+}
+
+.evento{
+  background-color: rgb(216, 4, 4);
+}
+
+.descricao{
+  position: absolute;
+  visibility: hidden ;
+  width: 250px;
+  padding: 15px;
+  opacity: 0;
+  background-color: white;
+  box-shadow: 9px 9px 20px #0000009f;
+  border-radius: 10px;
+}
+
+.evento:hover .descricao{
+  visibility: visible;
+  opacity: 1;
+}
