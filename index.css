@@ -265,37 +265,38 @@ footer p{
   font-weight: bold;
 }
 
-/* Parte Nickollas */
+/* Parte Nickollas - Agenda */
+
+.data, .t_propostas{
+    text-align: center;
+    margin: 20px;
+}
 
 table{
-  width: 100vh;
-  height: 75vh;
-  margin: 0 auto;
+   width:90%;
+    max-width:900px;
+    margin:30px auto;
 }
 
 
 td{
-  width: 80px;
+  /* width: 80px;
   height: 80px;
   margin-top: 10px;
   text-align: center;
   padding: 10px;
   background-color: whitesmoke;
   border-radius: 50%;
-  box-shadow: 9px 9px 20px #004badbe;
+  box-shadow: 9px 9px 20px #004badbe; */
+
+    width:90px;
+    height:90px;
+    border-radius:18px;
+    transition:0.3s;
 }
 
-.propostas{
-  width: 80%;
-  margin: 20px auto;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.propostas li{
-  list-style: none;
-  padding: 5px;
+.td:hover{
+    transform:scale(1.08);
 }
 
 .evento{
@@ -316,4 +317,19 @@ td{
 .evento:hover .descricao{
   visibility: visible;
   opacity: 1;
+}
+
+/* Propostas */
+
+.propostas{
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.propostas li{
+  list-style: none;
+  padding: 5px;
 }
